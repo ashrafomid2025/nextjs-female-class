@@ -25,7 +25,7 @@ const listNav: {id: number, name: string, link: string}[]= [
 
 function NavPage() {
   return (
-    <nav className='py-2 px-8 text-white bg-blue-600'>
+    <nav className='py-2 px-8 text-white flex justify-between items-center bg-purple-800'>
         <h1>Logo</h1>
         <div className='flex gap-4 items-center'>
             {listNav.map((link)=>(
