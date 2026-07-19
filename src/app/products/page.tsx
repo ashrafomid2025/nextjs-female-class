@@ -29,7 +29,10 @@ function page() {
     const query= searchParams.get("search") || "";
     const [text, setText]= useState(query);
     useEffect(()=>{
-     setText(query);
+     const timer = setTimeout(() => {
+      setText(query)
+     }, 5000);
+     return ()=> clearTimeout(timer)
     }, [query]);
     const handleSearch =  ()=>{
         router.push(`/products?search=${text}`);
