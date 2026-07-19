@@ -8,11 +8,18 @@ function SearchForm() {
     const searchParams=useSearchParams();
     const router=useRouter();
    const [search, setSearch]= useState(searchParams.get("search") || "");
+
    function handleClick(){
-    const params = new URLSearchParams("search");
-    if(params){
-        router.push(`/product/${params.get("search")}`)
+    const params = new URLSearchParams();
+    if(search){
+        params.set("search", search);
+    } else{
+        params.delete("search");
     }
+    router.push(`product?${params.toString()}`)
+    // if(params){
+    //     router.push(`/product/${params.get("search")}`)
+    // }
    }
   return (
     <div className="w-full px-10 py-2 flex gap-1.5 ">
