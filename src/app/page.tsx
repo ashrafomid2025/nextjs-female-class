@@ -6,6 +6,7 @@ export default function Page() {
     <div className="w-full h-screen flex justify-center items-center">
       <Badge>default badge</Badge>
       {/* navigating programmitically,
+      
       template */}
     </div>
   );
