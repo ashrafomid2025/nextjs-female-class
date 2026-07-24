@@ -4,9 +4,7 @@ function getRandomNumber(num: number) {
 }
 function page() {
   const num = getRandomNumber(2);
-  if (num == 1) {
-    throw new Error("Something went wrong in products page");
-  }
+  
 
   return (
     <div>
