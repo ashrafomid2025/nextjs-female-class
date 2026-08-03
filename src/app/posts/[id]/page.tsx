@@ -8,4 +8,9 @@ function page() {
   );
 }
 
+
+// parallel routes =>
+// مسیر های موازی
+// شاگردان استادان کورس ها
+
 export default page;

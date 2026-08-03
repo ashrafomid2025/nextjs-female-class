@@ -2,8 +2,8 @@ import React from "react";
 
 function page() {
   return (
-    <div className="w-full">
-      <h1>this is the dashboard page</h1>
+    <div>
+      <h1>this is the list of done courses</h1>
     </div>
   );
 }
