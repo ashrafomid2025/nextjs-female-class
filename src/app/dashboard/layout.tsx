@@ -32,6 +32,8 @@ function layout({
   } else {
     return <div className="w-full p-6 text-center border">{login}</div>;
   }
+  // intercepting routes => مسیر های تداخلی
+  
 }
 
 export default layout;

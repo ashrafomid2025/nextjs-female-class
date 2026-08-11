@@ -1,11 +1,9 @@
-import Link from "next/link";
 import React from "react";
 
 function page() {
   return (
     <div>
-      <h1>this is folder 2</h1>
-      <Link href="/f5">Go to folder 5</Link>
+      <h1>this is routes has been intercepted</h1>
     </div>
   );
 }
