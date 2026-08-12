@@ -23,3 +23,19 @@ export async function getSingleBook(id: number) {
   const response = await data.json();
   return response.data;
 }
+
+export default async function DeleteSingleBook(
+  prevState: unknown,
+  formData: FormData,
+) {
+  const data = await fetch(
+    `http://localhost:8000/api/book/${formData.get("id")}`,
+    {
+      method: "DELETE",
+    },
+  );
+  return {
+    status: true,
+    message: "One Book deleted successfully",
+  };
+}
