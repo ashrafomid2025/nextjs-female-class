@@ -12,7 +12,7 @@ function BookCard({ book }: { book: Book }) {
         <Link href={`/book/${book.id}`}>
           <img
             src={`http://localhost:8000/storage/${book.cover_image}`}
-            className="w-full h-72"
+            className="w-full h-72 object cover"
           />
         </Link>
       </CardHeader>
